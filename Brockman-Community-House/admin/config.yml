@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "documents"
+public_folder: "/documents"
+
+collections:
+  - name: "documents"
+    label: "Community Documents"
+    files:
+      - file: "documents/documents.json"
+        label: "PDF Documents"
+        name: "pdf_documents"
+        fields:
+          - label: "Strategic Plan"
+            name: "strategicPlan"
+            widget: "file"
+            required: true
+          - label: "Child Concern Reporting Form"
+            name: "childConcernForm"
+            widget: "file"
+            required: true
+          - label: "Annual Report"
+            name: "annualReport"
+            widget: "file"
+            required: true
+          - label: "Term Program"
+            name: "termProgram"
+            widget: "file"
+            required: false
